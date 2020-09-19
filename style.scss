@@ -1,0 +1,189 @@
+@import "config";
+@import "utilities";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: $light-color;
+  font-family: "Mulish", sans-serif;
+}
+
+//Header
+#header {
+  //Header Class
+  .header {
+    //Header Up
+    &-up {
+      font-size: 10px;
+      font-weight: 400px;
+      line-height: 12, 55px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+      height: 60px;
+      i {
+        padding-right: 0.5rem;
+        padding-left: 6rem;
+      }
+    }
+    //Header Up End
+
+    //Header Medium
+    &-medium-container {
+      padding: 1.5rem;
+    }
+    //header medium
+    &-medium {
+      //logo
+      .logo {
+        font-size: 24px;
+        font-family: "Luckiest Guy", cursive;
+        font-weight: 900;
+      }
+      //logo End
+
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-gap: 1rem;
+      //Search
+      .search {
+        form {
+          input[type="text"] {
+            padding-left: 2rem;
+            margin-right: 0;
+            height: 40px;
+            width: 350px;
+            border: none;
+            background-color: $grey-color;
+            border-radius: 5px 0 0 5px;
+          }
+
+          button {
+            background-color: $second-color;
+            color: $light-color;
+            border: none;
+            height: 40px;
+            width: 65px;
+            transform: translateX(-5px);
+            border-radius: 0 5px 5px 0;
+            margin-left: 0;
+          }
+          //Button End
+        }
+        //Form End
+      }
+      //Search End
+      //Account Class
+      .account {
+        display: flex;
+        align-items: center;
+        //Div
+        div {
+          display: flex;
+          align-items: center;
+          width: 110px;
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+          }
+        }
+        //Div End
+        .fas {
+          padding: 0.5rem 4.8em;
+        }
+        .fa {
+          padding: 0.5em;
+        }
+      }
+      //Account Class End
+    }
+    //Header Medium End
+  }
+  //Header Class End
+
+  //Navbar-container
+  .navbar-container {
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+
+      li a {
+        color: $light-color;
+        text-decoration: none;
+      }
+
+      li:hover a {
+        color: $second-color;
+      }
+    }
+    // ul End
+  }
+  //Navbar Container End
+}
+// Header End
+
+//Page Location Text
+.page-location-text {
+  color: $dark-color;
+  padding-top: 1rem;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 1.5rem;
+}
+
+//Section
+#section {
+  //Section Hotel
+
+  &-hotel {
+    //Hotel name info
+    .hotel-name-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      //Hotel name
+      .hotel-name {
+        text-transform: uppercase;
+        font-size: 24px;
+        padding-right: 1rem;
+      }
+      //hotel name end
+    }
+    //Hotel name info End
+    .page-location-text {
+      font-size: 13.5px;
+      width: 50%;
+      transform: translateY(-15px);
+      margin-bottom: 0.5rem;
+    }
+
+    //hotel info
+    .hotel-info {
+      //Hotel image
+      .hotel-image {
+        img {
+          width: 730px;
+          height: 450px;
+          border-radius: 5px;
+        }
+      }
+      //Hotel image
+      div {
+        display: flex;
+      }
+    }
+    //hotel info end
+  }
+  //Section Hotel End
+}

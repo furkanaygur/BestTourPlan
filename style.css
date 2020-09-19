@@ -1,0 +1,246 @@
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+.lead {
+  font-weight: bold;
+}
+
+.main-color {
+  color: #0a223d;
+}
+
+.second-color {
+  color: #ec1f46;
+}
+
+.bg-grey {
+  background-color: #f5fafe;
+  color: #333;
+}
+
+.bg-light {
+  background-color: #fff;
+  color: #333;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.bg-main {
+  background-color: #0a223d;
+  color: #fff;
+}
+
+.flash-offer {
+  background-color: #ec1f46;
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.user-rattings {
+  background-color: #ec1f46;
+  font-size: 12px;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-rattings .rate {
+  font-size: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  font-family: "Mulish", sans-serif;
+}
+
+#header .header-up {
+  font-size: 10px;
+  font-weight: 400px;
+  line-height: 12, 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+}
+
+#header .header-up i {
+  padding-right: 0.5rem;
+  padding-left: 6rem;
+}
+
+#header .header-medium-container {
+  padding: 1.5rem;
+}
+
+#header .header-medium {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 1rem;
+}
+
+#header .header-medium .logo {
+  font-size: 24px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 900;
+}
+
+#header .header-medium .search form input[type="text"] {
+  padding-left: 2rem;
+  margin-right: 0;
+  height: 40px;
+  width: 350px;
+  border: none;
+  background-color: #f5fafe;
+  border-radius: 5px 0 0 5px;
+}
+
+#header .header-medium .search form button {
+  background-color: #ec1f46;
+  color: #fff;
+  border: none;
+  height: 40px;
+  width: 65px;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  border-radius: 0 5px 5px 0;
+  margin-left: 0;
+}
+
+#header .header-medium .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .header-medium .account div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 110px;
+}
+
+#header .header-medium .account div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+#header .header-medium .account .fas {
+  padding: 0.5rem 4.8em;
+}
+
+#header .header-medium .account .fa {
+  padding: 0.5em;
+}
+
+#header .navbar-container ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+}
+
+#header .navbar-container ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .navbar-container ul li:hover a {
+  color: #ec1f46;
+}
+
+.page-location-text {
+  color: #333;
+  padding-top: 1rem;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 1.5rem;
+}
+
+#section-hotel .hotel-name-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#section-hotel .hotel-name-info .hotel-name {
+  text-transform: uppercase;
+  font-size: 24px;
+  padding-right: 1rem;
+}
+
+#section-hotel .page-location-text {
+  font-size: 13.5px;
+  width: 50%;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  margin-bottom: 0.5rem;
+}
+
+#section-hotel .hotel-info .hotel-image img {
+  width: 730px;
+  height: 450px;
+  border-radius: 5px;
+}
+
+#section-hotel .hotel-info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */

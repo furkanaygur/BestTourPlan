@@ -1,0 +1,69 @@
+// Container
+.container {
+  max-width: $website-width;
+  margin: auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+//lead
+.lead {
+  font-weight: bold;
+}
+
+//main color
+.main-color {
+  color: $main-color;
+}
+
+//second-color
+.second-color {
+  color: $second-color;
+}
+
+//bg
+.bg {
+  &-grey {
+    background-color: $grey-color;
+    color: $dark-color;
+  }
+
+  &-light {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+
+  &-dark {
+    background-color: $dark-color;
+    color: $light-color;
+  }
+
+  &-main {
+    background-color: $main-color;
+    color: $light-color;
+  }
+}
+//bg end
+
+//Flash order
+.flash-offer {
+  background-color: $second-color;
+  padding: 0.5rem;
+  color: $light-color;
+  border-radius: 5px;
+}
+
+//user-rattings
+.user-rattings {
+  background-color: $second-color;
+  font-size: 12px;
+  color: $light-color;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .rate {
+    font-size: 20px;
+  }
+}
