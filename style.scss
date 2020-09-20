@@ -175,10 +175,10 @@ body {
       //Hotel image
       .hotel-image {
         img {
-          width: 730px;
+          width: 700px;
           height: 450px;
           border-radius: 5px;
-          padding: 0 0.5rem;
+          padding-right: 0.5rem;
         }
       }
       //Hotel image end
@@ -188,7 +188,7 @@ body {
         height: 210px;
         background-color: $main-color;
         color: $light-color;
-        margin-bottom: 1.8rem;
+        margin-bottom: 1.5rem;
         border-radius: 5px;
         //div
         div {
@@ -262,14 +262,23 @@ body {
       .hotel-map-location {
         width: 350px;
         height: 210px;
-        background-color: $main-color;
-        color: $light-color;
+        margin-bottom: 1rem;
         img {
           border-radius: 10px;
         }
       }
     }
     //hotel info end
+
+    // SECTION HOTEL package
+    &-package {
+      //hotel package
+      .hotel-package {
+        height: 100px;
+        background-color: $second-color;
+      }
+    }
+    // SECTION HOTEL package end
   }
   //Section Hotel End
 }

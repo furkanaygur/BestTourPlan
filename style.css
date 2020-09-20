@@ -245,10 +245,10 @@ body {
 }
 
 #section-hotel .hotel-info .hotel-image img {
-  width: 730px;
+  width: 700px;
   height: 450px;
   border-radius: 5px;
-  padding: 0 0.5rem;
+  padding-right: 0.5rem;
 }
 
 #section-hotel .hotel-info .hotel-value {
@@ -256,7 +256,7 @@ body {
   height: 210px;
   background-color: #0a223d;
   color: #fff;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
   border-radius: 5px;
 }
 
@@ -350,11 +350,15 @@ body {
 #section-hotel .hotel-info .hotel-map-location {
   width: 350px;
   height: 210px;
-  background-color: #0a223d;
-  color: #fff;
+  margin-bottom: 1rem;
 }
 
 #section-hotel .hotel-info .hotel-map-location img {
   border-radius: 10px;
+}
+
+#section-hotel-package .hotel-package {
+  height: 100px;
+  background-color: #ec1f46;
 }
 /*# sourceMappingURL=style.css.map */
