@@ -9,7 +9,7 @@
 
 html,
 body {
-  background-color: $light-color;
+  background-color: $body-color;
   font-family: "Mulish", sans-serif;
 }
 
@@ -153,13 +153,6 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      //Hotel name
-      .hotel-name {
-        text-transform: uppercase;
-        font-size: 24px;
-        padding-right: 1rem;
-      }
-      //hotel name end
     }
     //Hotel name info End
     .page-location-text {
@@ -270,15 +263,123 @@ body {
     }
     //hotel info end
 
-    // SECTION HOTEL package
-    &-package {
-      //hotel package
-      .hotel-package {
-        height: 100px;
-        background-color: $second-color;
+    // SECTION HOTEL infos
+    &-infos {
+      //hotel infos
+      .hotel-infos {
+        margin-top: 1rem;
+        ul {
+          list-style: none;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 80px;
+
+          a {
+            border-bottom: 3px solid transparent;
+            padding-bottom: 10px;
+
+            &.current {
+              color: $second-color;
+              border-color: $second-color;
+            }
+          }
+
+          li a {
+            color: $main-color;
+            text-decoration: none;
+          }
+
+          li:hover a {
+            color: $second-color;
+          }
+        }
+        // ul end
+      }
+      // Hotel infos End
+      .hotel-infos-content {
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-areas:
+          "box1 box2"
+          "box3 box3";
+        grid-gap: 1rem;
+
+        .box1 {
+          background-color: #ffffff;
+          border-radius: 5px;
+          grid-area: box1;
+          height: 220px;
+          width: 510px;
+          //first Div
+          div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            padding: 1rem;
+            //Second div
+            div {
+              padding: 0.5rem;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              width: 200px;
+              font-size: 12px;
+              .fa {
+                padding-right: 1rem;
+                font-size: 14px;
+              }
+            }
+            //second div end
+          }
+          //first div end
+        }
+        //box1 end
+        .box2 {
+          background-color: #ffffff;
+          border-radius: 5px;
+          grid-area: box2;
+          height: 220px;
+          width: 510px;
+          //first Div
+          div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            padding: 1rem;
+
+            &:last-child {
+              justify-content: center;
+            }
+
+            //Second div
+            div {
+              padding: 0.5rem;
+              display: flex;
+              justify-content: left;
+              width: 220px;
+              font-size: 12px;
+              .fa {
+                padding-right: 1rem;
+                font-size: 14px;
+              }
+            }
+            //second div end
+          }
+          //first div end
+        }
+        .box3 {
+          border-radius: 5px;
+          margin-top: 1.5rem;
+          grid-area: box3;
+          height: 200px;
+          width: 100%;
+          background-color: $dark-color;
+        }
       }
     }
-    // SECTION HOTEL package end
+    // SECTION HOTEL infos end
   }
   //Section Hotel End
 }
