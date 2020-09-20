@@ -264,7 +264,9 @@ body {
         height: 210px;
         background-color: $main-color;
         color: $light-color;
-        border-radius: 5px;
+        img {
+          border-radius: 10px;
+        }
       }
     }
     //hotel info end

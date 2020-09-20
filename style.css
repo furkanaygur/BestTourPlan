@@ -352,6 +352,9 @@ body {
   height: 210px;
   background-color: #0a223d;
   color: #fff;
-  border-radius: 5px;
+}
+
+#section-hotel .hotel-info .hotel-map-location img {
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */
