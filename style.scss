@@ -250,12 +250,15 @@ body {
           border-radius: 5px;
           width: 90%;
           cursor: pointer;
+          &:hover {
+            opacity: 90%;
+          }
         }
       }
       .hotel-map-location {
         width: 350px;
         height: 210px;
-        margin-bottom: 1rem;
+
         img {
           border-radius: 10px;
         }
@@ -267,7 +270,7 @@ body {
     &-infos {
       //hotel infos
       .hotel-infos {
-        margin-top: 1rem;
+        margin: 1rem 0;
         ul {
           list-style: none;
           font-weight: bold;
@@ -299,7 +302,7 @@ body {
       }
       // Hotel infos End
       .hotel-infos-content {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
         display: grid;
         grid-template-areas:
           "box1 box2"
@@ -417,6 +420,52 @@ body {
         //box3 end
       }
       // hotel content infos
+      .other-packages {
+        .other-packages-title {
+          display: flex;
+          padding: 3rem;
+          justify-content: center;
+          align-items: center;
+        }
+        .other-packages-items {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 1rem;
+
+          & > *:first-child {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            grid-column: 1 / span 2;
+
+            img {
+              border-radius: 5px;
+              width: 366px;
+              height: 500px;
+            }
+            .package-content {
+              display: flex;
+              flex-direction: column;
+              padding: 1.5rem;
+              font-size: 14px;
+              .content-title {
+                font-size: 18px;
+                padding-bottom: 1rem;
+                i {
+                  font-size: 6px;
+                  color: #f2994a;
+                  padding-bottom: 0.5rem;
+                }
+              }
+            }
+          }
+          .package-item {
+            border-radius: 5px;
+            background-color: $main-color;
+            color: $light-color;
+          }
+        }
+      }
     }
     // SECTION HOTEL infos end
   }

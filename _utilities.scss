@@ -16,6 +16,11 @@
   text-transform: uppercase;
   font-size: 24px;
   padding-right: 1rem;
+  i {
+    font-size: 6px;
+    color: #f2994a;
+    padding-bottom: 0.5rem;
+  }
 }
 
 .big-title {
@@ -108,4 +113,11 @@
   height: 2px;
   margin: 2rem auto 0.2rem auto;
   border-bottom: 1px dashed #e0e0e0;
+}
+
+//little star
+.star {
+  font-size: 6px;
+  color: #f2994a;
+  padding-bottom: 0.5rem;
 }
