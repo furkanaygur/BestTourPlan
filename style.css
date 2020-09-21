@@ -18,7 +18,6 @@
 .big-title {
   font-size: 36px;
   text-transform: uppercase;
-  margin: auto;
 }
 
 .main-color {
@@ -550,6 +549,7 @@ body {
   color: #ec1f46;
   font-size: 13px;
   padding-left: 1rem;
+  font-weight: bold;
 }
 
 #section-hotel-infos .hotel-infos-content .box3 .items .item ul {
