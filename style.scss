@@ -438,12 +438,22 @@ body {
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 1rem;
             grid-column: 1 / span 2;
-
-            img {
-              border-radius: 5px 0 0 5px;
-              width: 346px !important;
-              height: 500px !important;
+            .packages-img {
+              img {
+                border-radius: 5px 0 0 5px;
+                width: 346px !important;
+                height: 500px !important;
+              }
+              .flash-offer {
+                display: flex;
+                width: 80px;
+                height: 40px;
+                font-size: 12px;
+                align-items: center;
+                justify-content: center;
+              }
             }
+
             //package content
             .package-content {
               display: flex;
@@ -480,11 +490,20 @@ body {
             border-radius: 5px;
             background-color: $main-color;
             color: $light-color;
-
-            img {
-              border-radius: 5px 5px 0 0;
-              width: 340px;
-              height: 250px;
+            .packages-img {
+              position: relative;
+              img {
+                border-radius: 5px 5px 0 0;
+                width: 340px;
+                height: 250px;
+              }
+              .flash-offer {
+                position: absolute;
+                left: 0;
+                top: 20px;
+                z-index: 1;
+                border-radius: 0 5px 5px 0;
+              }
             }
 
             .package-content {
