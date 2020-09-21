@@ -615,7 +615,7 @@ body {
 }
 
 #section-hotel-infos .other-packages .other-packages-items > *:first-child img {
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
   width: 366px;
   height: 500px;
 }
@@ -632,13 +632,8 @@ body {
   font-size: 14px;
 }
 
-#section-hotel-infos .other-packages .other-packages-items > *:first-child .package-content .content-title {
-  font-size: 18px;
-  padding-bottom: 1rem;
-}
-
 #section-hotel-infos .other-packages .other-packages-items > *:first-child .package-content .content-title i {
-  font-size: 6px;
+  font-size: 0.3rem;
   color: #f2994a;
   padding-bottom: 0.5rem;
 }
@@ -647,5 +642,73 @@ body {
   border-radius: 5px;
   background-color: #0a223d;
   color: #fff;
+}
+
+#section-hotel-infos .other-packages .other-packages-items .package-item .content-title {
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+
+#section-hotel-infos .other-packages .other-packages-items .package-item .content-title i {
+  font-size: 0.3rem;
+  color: #f2994a;
+  padding-bottom: 0.5rem;
+}
+
+#section-hotel-infos .other-packages .other-packages-items .package-item .package-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 0;
+  font-size: 10px;
+}
+
+#section-hotel-infos .other-packages .other-packages-items .package-item .package-icons i {
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+#section-hotel-infos .other-packages .other-packages-items .package-item .package-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#section-hotel-infos .other-packages .other-packages-items .package-item .package-value div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 3.8rem;
+}
+
+#section-hotel-infos .other-packages .other-packages-items .package-item .package-value div .discount {
+  font-size: 14px;
+}
+
+#section-hotel-infos .other-packages .other-packages-items .package-item .package-value button[type="submit"] {
+  border-radius: 5px;
+  float: right;
+  height: 40px;
+  width: 120px;
+  background-color: #ec1f46;
+  border: none;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+#section-hotel-infos .other-packages .other-packages-items .package-item .package-value button[type="submit"]:hover {
+  opacity: 90%;
 }
 /*# sourceMappingURL=style.css.map */

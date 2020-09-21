@@ -420,13 +420,19 @@ body {
         //box3 end
       }
       // hotel content infos
+
+      //other-packages
       .other-packages {
+        //other-packages-title
         .other-packages-title {
           display: flex;
           padding: 3rem;
           justify-content: center;
           align-items: center;
         }
+        //other-packages-title end
+
+        //other-packages-items
         .other-packages-items {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -439,7 +445,7 @@ body {
             grid-column: 1 / span 2;
 
             img {
-              border-radius: 5px;
+              border-radius: 5px 0 0 5px;
               width: 366px;
               height: 500px;
             }
@@ -449,23 +455,81 @@ body {
               padding: 1.5rem;
               font-size: 14px;
               .content-title {
-                font-size: 18px;
-                padding-bottom: 1rem;
                 i {
-                  font-size: 6px;
+                  font-size: 0.3rem;
                   color: #f2994a;
                   padding-bottom: 0.5rem;
                 }
               }
             }
           }
+          //Package-item
           .package-item {
             border-radius: 5px;
             background-color: $main-color;
             color: $light-color;
+            //content-title
+            .content-title {
+              font-size: 18px;
+              padding-bottom: 1rem;
+              i {
+                font-size: 0.3rem;
+                color: #f2994a;
+                padding-bottom: 0.5rem;
+              }
+            }
+            //content-title-end
+
+            //package-icons
+            .package-icons {
+              display: flex;
+              flex-direction: column;
+              padding: 2rem 0;
+              font-size: 10px;
+              i {
+                padding-right: 1rem;
+                padding-top: 1rem;
+              }
+            }
+            //package icons end
+
+            //package-value
+            .package-value {
+              display: flex;
+              align-items: flex-end;
+              //div
+              div {
+                display: flex;
+                flex-direction: column;
+                padding-right: 3.8rem;
+                .discount {
+                  font-size: 14px;
+                }
+              }
+              //div end
+
+              button[type="submit"] {
+                border-radius: 5px;
+                float: right;
+                height: 40px;
+                width: 120px;
+                background-color: $second-color;
+                border: none;
+                text-align: center;
+                color: $light-color;
+                cursor: pointer;
+                &:hover {
+                  opacity: 90%;
+                }
+              }
+            }
+            //package value end
           }
+          //package-item end
         }
+        //other-packages-item end
       }
+      //other packages
     }
     // SECTION HOTEL infos end
   }
