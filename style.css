@@ -54,11 +54,21 @@
   color: #fff;
 }
 
+.page-location-text {
+  color: #333;
+  padding-top: 1.4rem;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 1.5rem;
+}
+
 .flash-offer {
   background-color: #ec1f46;
   padding: 0.5rem;
   color: #fff;
   border-radius: 5px;
+  font-size: 10px;
+  width: 70px;
 }
 
 .user-rattings {
@@ -254,32 +264,23 @@ body {
   color: #ec1f46;
 }
 
-.page-location-text {
-  color: #333;
-  padding-top: 1rem;
-  font-size: 12px;
-  line-height: 12px;
-  margin-bottom: 1.5rem;
-}
-
 #section-hotel .hotel-name-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 #section-hotel .page-location-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
   font-size: 13.5px;
   width: 50%;
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #section-hotel .hotel-info {

@@ -62,12 +62,23 @@
 }
 //bg end
 
+//Page Location Text
+.page-location-text {
+  color: $dark-color;
+  padding-top: 1.4rem;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 1.5rem;
+}
+
 //Flash order
 .flash-offer {
   background-color: $second-color;
   padding: 0.5rem;
   color: $light-color;
   border-radius: 5px;
+  font-size: 10px;
+  width: 70px;
 }
 
 //user-rattings
