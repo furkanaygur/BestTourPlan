@@ -18,6 +18,12 @@
   padding-right: 1rem;
 }
 
+.big-title {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: auto;
+}
+
 //main color
 .main-color {
   color: $main-color;
@@ -95,4 +101,12 @@
   padding: 1rem;
   font-weight: bold;
   border-radius: 5px 5px 0 0;
+}
+
+//dashed-line
+.dashed-line {
+  width: 90%;
+  height: 2px;
+  margin: 2rem auto 0.2rem auto;
+  border-bottom: 1px dashed #e0e0e0;
 }

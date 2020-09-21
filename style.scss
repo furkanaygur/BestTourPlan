@@ -369,15 +369,53 @@ body {
           }
           //first div end
         }
+        //box3
         .box3 {
           border-radius: 5px;
           margin-top: 1.5rem;
           grid-area: box3;
-          height: 200px;
+          background-color: #ffffff;
           width: 100%;
-          background-color: $dark-color;
+          //items
+          .items {
+            display: flex;
+            justify-content: start;
+            /*display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 3rem;
+            padding: 2rem 0 0 1.2rem;*/
+            //item
+            padding: 2em;
+            .item {
+              width: 340px;
+              //item title
+              &-title {
+                color: $second-color;
+                font-size: 13px;
+                padding-left: 1rem;
+              }
+
+              ul {
+                padding-top: 0.6rem;
+                list-style: none;
+                li {
+                  font-size: 12px;
+                  padding: 0.8rem;
+                  i {
+                    font-size: 14px;
+                    padding-right: 1.2rem;
+                  }
+                }
+              }
+              // ul end
+            }
+            //item
+          }
+          //items end
         }
+        //box3 end
       }
+      // hotel content infos
     }
     // SECTION HOTEL infos end
   }

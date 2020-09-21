@@ -15,6 +15,12 @@
   padding-right: 1rem;
 }
 
+.big-title {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: auto;
+}
+
 .main-color {
   color: #0a223d;
 }
@@ -96,6 +102,13 @@
   padding: 1rem;
   font-weight: bold;
   border-radius: 5px 5px 0 0;
+}
+
+.dashed-line {
+  width: 90%;
+  height: 2px;
+  margin: 2rem auto 0.2rem auto;
+  border-bottom: 1px dashed #e0e0e0;
 }
 
 * {
@@ -511,8 +524,46 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: box3;
-  height: 200px;
+  background-color: #ffffff;
   width: 100%;
-  background-color: #333;
+}
+
+#section-hotel-infos .hotel-infos-content .box3 .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  /*display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 3rem;
+            padding: 2rem 0 0 1.2rem;*/
+  padding: 2em;
+}
+
+#section-hotel-infos .hotel-infos-content .box3 .items .item {
+  width: 340px;
+}
+
+#section-hotel-infos .hotel-infos-content .box3 .items .item-title {
+  color: #ec1f46;
+  font-size: 13px;
+  padding-left: 1rem;
+}
+
+#section-hotel-infos .hotel-infos-content .box3 .items .item ul {
+  padding-top: 0.6rem;
+  list-style: none;
+}
+
+#section-hotel-infos .hotel-infos-content .box3 .items .item ul li {
+  font-size: 12px;
+  padding: 0.8rem;
+}
+
+#section-hotel-infos .hotel-infos-content .box3 .items .item ul li i {
+  font-size: 14px;
+  padding-right: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
