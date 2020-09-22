@@ -19,7 +19,7 @@ function initMap() {
 $(document).ready(function () {
   const nexticon = '<i class="fa fa-chevron-right"></i>';
   const previcon = '<i class="fa fa-chevron-left"></i>';
-  $(".owl-carousel").owlCarousel({
+  $(".about-us").owlCarousel({
     loop: true,
     center: true,
     items: 1,

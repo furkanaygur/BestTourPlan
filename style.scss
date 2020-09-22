@@ -562,6 +562,19 @@ body {
       margin: auto;
       position: relative;
 
+      .owl-nav {
+        position: absolute;
+        top: 40%;
+        .owl-prev {
+          position: absolute;
+          left: -10rem !important;
+        }
+        .owl-next {
+          position: absolute;
+          left: 55rem !important;
+        }
+      }
+
       img {
         width: 90px;
         height: 90px;
@@ -628,7 +641,7 @@ body {
       }
       //content end
     }
-    //about us cclass end
+    //about us class end
   }
   //section about-us end
 
@@ -708,9 +721,10 @@ body {
   &-footer {
     background-color: $main-color;
     color: $light-color;
+    padding: 2rem 0;
     //footer top
     .footer-top {
-      padding-top: 5rem;
+      padding-top: 3rem;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
 
@@ -781,6 +795,9 @@ body {
       //footer down item
       &-item {
         font-size: 12px;
+        .title {
+          font-size: 16px;
+        }
         // ul
         ul {
           list-style: none;
@@ -792,9 +809,6 @@ body {
             width: 350px;
             display: flex;
             padding: 0.5rem 0;
-            .title {
-              font-size: 16px;
-            }
 
             i {
               padding-right: 1rem;
@@ -803,10 +817,80 @@ body {
           //li end
         }
         // ul end
+
+        //form
+        form {
+          //text-fields
+          .text-fields {
+            display: grid;
+            grid-template-areas:
+              "name phone"
+              "message message ";
+            grid-gap: 1rem;
+
+            .text-input {
+              height: 40px;
+            }
+
+            //grid areas
+            .name-input {
+              grid-area: name;
+            }
+
+            .phone-input {
+              grid-area: phone;
+            }
+
+            .message-input {
+              grid-area: message;
+              height: 140px;
+            }
+          }
+          //text-fields end
+          .button-area {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+        //form end
       }
       //footer down item end
     }
     //footer down end
+
+    //page-bottom
+    .page-bottom {
+      padding-top: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 7fr 1fr;
+      //ul
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        //li
+        li {
+          padding: 0 0.5rem;
+          //a
+          a {
+            text-decoration: none;
+            color: $light-color;
+            &:hover {
+              color: $second-color;
+            }
+          }
+          // a end
+        }
+        //li end
+      }
+      //ul
+      .cards {
+        background-color: black;
+        float: right;
+      }
+    }
+    //page bottom end
   }
   //section footer end
 }
