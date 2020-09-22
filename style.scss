@@ -642,20 +642,30 @@ body {
 
   //section subs-to-our
   &-subs-to-our {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
     background: url(img/hotel.jpg);
     color: #ffffff;
+    .showcase {
+      /* Overlay */
+      background-color: rgba(0, 0, 0, 0.4);
+    }
 
-    // overlay
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 1);
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      span {
+        padding: 3rem;
+        font-size: 22px;
+        p {
+          font-size: 32px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+      .search {
+        padding: 3.5rem;
+      }
+    }
   }
   //section subs-to-our end
 }

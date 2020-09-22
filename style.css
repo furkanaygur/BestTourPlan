@@ -884,23 +884,40 @@ body {
 }
 
 #section-subs-to-our {
-  position: relative;
+  background: url(img/hotel.jpg);
+  color: #ffffff;
+}
+
+#section-subs-to-our .showcase {
+  /* Overlay */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#section-subs-to-our div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 4rem;
-  background: url(img/hotel.jpg);
-  color: #ffffff;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: black;
+}
+
+#section-subs-to-our div span {
+  padding: 3rem;
+  font-size: 22px;
+}
+
+#section-subs-to-our div span p {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#section-subs-to-our div .search {
+  padding: 3.5rem;
 }
 /*# sourceMappingURL=style.css.map */
