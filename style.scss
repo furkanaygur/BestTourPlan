@@ -835,15 +835,24 @@ body {
             //grid areas
             .name-input {
               grid-area: name;
+              border: none;
+              padding: 0 1rem;
+              border-radius: 5px;
             }
 
             .phone-input {
               grid-area: phone;
+              border: none;
+              padding: 0 1rem;
+              border-radius: 5px;
             }
 
             .message-input {
               grid-area: message;
               height: 140px;
+              border-radius: 5px;
+              border: none;
+              padding: 0.5rem 1rem;
             }
           }
           //text-fields end

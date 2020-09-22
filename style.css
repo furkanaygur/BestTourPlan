@@ -1149,12 +1149,18 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: name;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 5px;
 }
 
 #section-footer .footer-down-item form .text-fields .phone-input {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: phone;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 5px;
 }
 
 #section-footer .footer-down-item form .text-fields .message-input {
@@ -1163,6 +1169,9 @@ body {
   -ms-grid-column-span: 2;
   grid-area: message;
   height: 140px;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem 1rem;
 }
 
 #section-footer .footer-down-item form .button-area {
