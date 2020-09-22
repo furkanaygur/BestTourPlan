@@ -726,7 +726,7 @@ body {
       }
 
       //footer item
-      .footer-item {
+      .footer-top-item {
         padding: 0 1rem;
 
         .title {
@@ -772,6 +772,41 @@ body {
       //footer item end
     }
     //footer top end
+
+    //footer down
+    .footer-down {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      //footer down item
+      &-item {
+        font-size: 12px;
+        // ul
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          //li
+          li {
+            width: 350px;
+            display: flex;
+            padding: 0.5rem 0;
+            .title {
+              font-size: 16px;
+            }
+
+            i {
+              padding-right: 1rem;
+            }
+          }
+          //li end
+        }
+        // ul end
+      }
+      //footer down item end
+    }
+    //footer down end
   }
   //section footer end
 }
