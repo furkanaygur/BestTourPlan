@@ -9,6 +9,13 @@
   font-weight: bold;
 }
 
+.logo {
+  font-size: 24px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .title {
   text-transform: uppercase;
   font-size: 24px;
@@ -34,6 +41,10 @@
 
 .second-color {
   color: #ec1f46;
+}
+
+.light-color {
+  color: #fff;
 }
 
 .bg-grey {
@@ -217,12 +228,6 @@ body {
   -ms-grid-columns: 1fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 1rem;
-}
-
-#header .header-medium .logo {
-  font-size: 24px;
-  font-family: "Luckiest Guy", cursive;
-  font-weight: 900;
 }
 
 #header .header-medium .account {
@@ -980,5 +985,82 @@ body {
   height: 30px;
   width: 100px;
   font-size: 12px;
+}
+
+#section-footer {
+  background-color: #0a223d;
+  color: #fff;
+}
+
+#section-footer .footer-top {
+  padding-top: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+#section-footer .footer-top .logo {
+  font-size: 48px;
+}
+
+#section-footer .footer-top .child2 {
+  width: 325px !important;
+}
+
+#section-footer .footer-top .child3 {
+  width: 240px !important;
+}
+
+#section-footer .footer-top .footer-item {
+  padding: 0 1rem;
+}
+
+#section-footer .footer-top .footer-item .title {
+  font-size: 18px;
+}
+
+#section-footer .footer-top .footer-item ul {
+  margin-top: 1rem;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#section-footer .footer-top .footer-item ul li {
+  font-size: 14px;
+  padding: 0.1rem 0;
+}
+
+#section-footer .footer-top .footer-item ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#section-footer .footer-top .footer-item ul li a:hover {
+  color: #ec1f46;
+}
+
+#section-footer .footer-top .footer-item ul .social-media {
+  margin-top: 1rem;
+}
+
+#section-footer .footer-top .footer-item ul .social-media span {
+  margin-right: 2rem;
+  font-weight: bold;
+}
+
+#section-footer .footer-top .footer-item ul .social-media i {
+  padding: 0 0.5rem;
+}
+
+#section-footer .footer-top .footer-item ul .social-media i:hover {
+  color: #ec1f46;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

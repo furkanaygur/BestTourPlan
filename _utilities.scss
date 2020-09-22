@@ -11,6 +11,16 @@
   font-weight: bold;
 }
 
+
+//logo
+.logo {
+  font-size: 24px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+//logo End
+
 //title
 .title {
   text-transform: uppercase;
@@ -38,6 +48,9 @@
 //second-color
 .second-color {
   color: $second-color;
+}
+.light-color {
+  color: $light-color;
 }
 
 //bg

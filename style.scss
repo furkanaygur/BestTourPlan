@@ -44,14 +44,6 @@ body {
       grid-template-columns: 1fr 2fr 1fr;
       grid-gap: 1rem;
 
-      //logo
-      .logo {
-        font-size: 24px;
-        font-family: "Luckiest Guy", cursive;
-        font-weight: 900;
-      }
-      //logo End
-
       //Account Class
       .account {
         display: flex;
@@ -711,5 +703,76 @@ body {
     //items end
   }
   //section other-activities end
+
+  //section footer
+  &-footer {
+    background-color: $main-color;
+    color: $light-color;
+    //footer top
+    .footer-top {
+      padding-top: 5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      .logo {
+        font-size: 48px;
+      }
+
+      .child2 {
+        width: 325px !important;
+      }
+      .child3 {
+        width: 240px !important;
+      }
+
+      //footer item
+      .footer-item {
+        padding: 0 1rem;
+
+        .title {
+          font-size: 18px;
+        }
+        //ul
+        ul {
+          margin-top: 1rem;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          //li
+          li {
+            font-size: 14px;
+            padding: 0.1rem 0;
+            a {
+              text-decoration: none;
+              color: $light-color;
+              &:hover {
+                color: $second-color;
+              }
+            }
+            // a end
+          }
+          //li end
+          .social-media {
+            margin-top: 1rem;
+            span {
+              margin-right: 2rem;
+              font-weight: bold;
+            }
+            i {
+              padding: 0 0.5rem;
+              &:hover {
+                color: $second-color;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        //ul end
+      }
+      //footer item end
+    }
+    //footer top end
+  }
+  //section footer end
 }
 //section end
