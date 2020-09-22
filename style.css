@@ -134,6 +134,28 @@
   padding-bottom: 0.5rem;
 }
 
+.search form input[type="text"] {
+  padding-left: 2rem;
+  margin-right: 0;
+  height: 40px;
+  width: 350px;
+  border: none;
+  background-color: #f5fafe;
+  border-radius: 5px 0 0 5px;
+}
+
+.search form button {
+  background-color: #ec1f46;
+  color: #fff;
+  border: none;
+  height: 40px;
+  width: 65px;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  border-radius: 0 5px 5px 0;
+  margin-left: 0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -185,28 +207,6 @@ body {
   font-size: 24px;
   font-family: "Luckiest Guy", cursive;
   font-weight: 900;
-}
-
-#header .header-medium .search form input[type="text"] {
-  padding-left: 2rem;
-  margin-right: 0;
-  height: 40px;
-  width: 350px;
-  border: none;
-  background-color: #f5fafe;
-  border-radius: 5px 0 0 5px;
-}
-
-#header .header-medium .search form button {
-  background-color: #ec1f46;
-  color: #fff;
-  border: none;
-  height: 40px;
-  width: 65px;
-  -webkit-transform: translateX(-5px);
-          transform: translateX(-5px);
-  border-radius: 0 5px 5px 0;
-  margin-left: 0;
 }
 
 #header .header-medium .account {
@@ -774,11 +774,15 @@ body {
   opacity: 90%;
 }
 
+#section-about-us {
+  padding: 4rem 0;
+}
+
 #section-about-us .about-us-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 3rem;
+  padding-bottom: 5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -788,7 +792,6 @@ body {
 }
 
 #section-about-us .about-us {
-  padding-top: 3rem;
   max-width: 730px;
   height: 280px;
   margin: auto;
@@ -876,5 +879,28 @@ body {
 #section-about-us .about-us .content .text {
   text-align: center;
   font-size: 12px;
+  padding: 1rem;
+  width: 550px;
+}
+
+#section-subs-to-our {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
+  background: url(img/hotel.jpg);
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */

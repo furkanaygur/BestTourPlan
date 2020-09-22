@@ -134,3 +134,32 @@
   color: #f2994a;
   padding-bottom: 0.5rem;
 }
+
+//Search
+.search {
+  form {
+    input[type="text"] {
+      padding-left: 2rem;
+      margin-right: 0;
+      height: 40px;
+      width: 350px;
+      border: none;
+      background-color: $grey-color;
+      border-radius: 5px 0 0 5px;
+    }
+
+    button {
+      background-color: $second-color;
+      color: $light-color;
+      border: none;
+      height: 40px;
+      width: 65px;
+      transform: translateX(-5px);
+      border-radius: 0 5px 5px 0;
+      margin-left: 0;
+    }
+    //Button End
+  }
+  //Form End
+}
+//Search End

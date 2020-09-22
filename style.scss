@@ -40,6 +40,10 @@ body {
     }
     //header medium
     &-medium {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-gap: 1rem;
+
       //logo
       .logo {
         font-size: 24px;
@@ -48,37 +52,6 @@ body {
       }
       //logo End
 
-      display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
-      grid-gap: 1rem;
-      //Search
-      .search {
-        form {
-          input[type="text"] {
-            padding-left: 2rem;
-            margin-right: 0;
-            height: 40px;
-            width: 350px;
-            border: none;
-            background-color: $grey-color;
-            border-radius: 5px 0 0 5px;
-          }
-
-          button {
-            background-color: $second-color;
-            color: $light-color;
-            border: none;
-            height: 40px;
-            width: 65px;
-            transform: translateX(-5px);
-            border-radius: 0 5px 5px 0;
-            margin-left: 0;
-          }
-          //Button End
-        }
-        //Form End
-      }
-      //Search End
       //Account Class
       .account {
         display: flex;
@@ -583,15 +556,15 @@ body {
 
   //Section about-us
   &-about-us {
+    padding: 4rem 0;
     .about-us-title {
       display: flex;
-      padding-top: 3rem;
+      padding-bottom: 5rem;
       justify-content: center;
       align-items: center;
     }
     //about us class
     .about-us {
-      padding-top: 3rem;
       max-width: 730px;
       height: 280px;
       margin: auto;
@@ -656,6 +629,8 @@ body {
         .text {
           text-align: center;
           font-size: 12px;
+          padding: 1rem;
+          width: 550px;
         }
         //text end
       }
@@ -664,5 +639,24 @@ body {
     //about us cclass end
   }
   //section about-us end
+
+  //section subs-to-our
+  &-subs-to-our {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    background: url(img/hotel.jpg);
+    color: #ffffff;
+
+    // overlay
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 1);
+  }
+  //section subs-to-our end
 }
 //section end
