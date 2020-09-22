@@ -592,7 +592,7 @@ body {
     //about us class
     .about-us {
       padding-top: 3rem;
-      width: 730px;
+      max-width: 730px;
       height: 280px;
       margin: auto;
       position: relative;
@@ -603,7 +603,7 @@ body {
         border-radius: 50%;
         position: absolute;
         top: -50px;
-        left: 325px;
+        left: 44%;
         z-index: 3;
       }
 
@@ -655,6 +655,7 @@ body {
         //text
         .text {
           text-align: center;
+          font-size: 12px;
         }
         //text end
       }
