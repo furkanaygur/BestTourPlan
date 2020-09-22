@@ -64,6 +64,23 @@
 }
 //bg end
 
+//button ::Book Now ::
+button[type="submit"] {
+  border-radius: 5px;
+  float: right;
+  height: 40px;
+  width: 120px;
+  background-color: $second-color;
+  border: none;
+  text-align: center;
+  color: $light-color;
+  cursor: pointer;
+  &:hover {
+    opacity: 90%;
+  }
+}
+//button ::Book Now:: end
+
 //Page Location Text
 .page-location-text {
   color: $dark-color;
