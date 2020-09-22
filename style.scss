@@ -887,7 +887,12 @@ body {
       //ul
       .cards {
         background-color: black;
-        float: right;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        i {
+          padding: 0 0.3rem;
+        }
       }
     }
     //page bottom end
