@@ -774,16 +774,106 @@ body {
   opacity: 90%;
 }
 
-#section-hotel-infos .about-us-title {
+#section-about-us .about-us-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3rem;
+  padding-top: 3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#section-about-us .about-us {
+  padding-top: 3rem;
+  width: 730px;
+  height: 280px;
+  margin: auto;
+  position: relative;
+}
+
+#section-about-us .about-us img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 325px;
+  z-index: 3;
+}
+
+#section-about-us .about-us .content {
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-about-us .about-us .content .user-info {
+  z-index: 2;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#section-about-us .about-us .content .user-info .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: #ec1f46;
+}
+
+#section-about-us .about-us .content .user-info .stayed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section-about-us .about-us .content .user-info .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section-about-us .about-us .content .user-info .stars i {
+  font-size: 5px;
+  color: #f2994a;
+  padding: 0.2rem;
+}
+
+#section-about-us .about-us .content .text {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

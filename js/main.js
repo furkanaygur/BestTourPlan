@@ -13,3 +13,18 @@ function initMap() {
   // The marker, positioned at location
   const marker = new google.maps.Marker({ position: loc, map: map });
 }
+
+//slider
+
+$(document).ready(function () {
+  const nexticon = '<i class="fa fa-chevron-right"></i>';
+  const previcon = '<i class="fa fa-chevron-left"></i>';
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    center: true,
+    items: 1,
+    nav: true,
+    navText: [previcon, nexticon],
+    dots: true,
+  });
+});
