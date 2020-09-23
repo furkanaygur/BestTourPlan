@@ -1,4 +1,55 @@
 //************** at the bottom of the style.scss file
+
+// For logo
+@media (max-width: 1068px) {
+  .logo {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo {
+    font-size: 28px !important;
+  }
+  #header {
+    .header-medium .search {
+      margin-top: 2.5rem;
+    }
+  }
+}
+//for logo medias end
+
+//for footer
+@media (max-width: 850px) {
+  //section footer
+  #section-footer {
+    //footer top
+    .footer-top {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      padding-top: 0;
+      //logo
+      .logo {
+        font-size: 36px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      //logo end
+      .footer-top-item {
+        padding: 1rem;
+      }
+      .child3,
+      .child2 {
+        border-top: 1px dashed $light-color;
+      }
+    }
+    //footer top end
+  }
+  //section footer end
+}
+// for footer medias end
+
 //for ipad pro
 @media (max-width: 1024px) {
   //header
@@ -96,4 +147,136 @@
   }
   //sections end
 }
-// medial max width 1024 end
+// media max width 1024 end
+
+//media max width 1000
+@media (max-width: 1000px) {
+  //section hotel infos
+  #section-hotel-infos {
+    .hotel-infos {
+      display: none;
+    }
+    //hotel infos
+    .hotel-infos-mobile {
+      display: block;
+      margin: auto;
+      width: 1000px;
+      // owl stage outer
+      .owl-stage-outer {
+        padding-top: 2.5rem;
+        //owl stage
+        .owl-stage {
+          //owl item
+          .owl-item {
+            div {
+              display: flex;
+              justify-content: center;
+            }
+          }
+          //owl item end
+        }
+        //owl stage end
+      }
+      //owl stage outer end
+      .current {
+        color: $second-color;
+      }
+      a {
+        text-decoration: none;
+        color: $main-color;
+        font-weight: bold;
+        &:hover {
+          color: $second-color;
+        }
+      }
+      //a edn
+    }
+    //hotel infos end
+  }
+  //section hotel inofs end
+  #section-package-summery {
+    .box3 .items .item .item-title {
+      font-size: 14px;
+    }
+  }
+
+  .big-title {
+    font-size: 24px;
+  }
+}
+//media max width 1000 end
+
+//media max width 800
+@media (max-width: 800px) {
+  // section hotel photos
+  #section-hotel-photos .hotel-info {
+    grid-template-columns: repeat(2, 1fr);
+    .hotel-image {
+      height: 300px;
+    }
+    .hotel-map-location {
+      height: 240px;
+    }
+  }
+  // section hotel photos end
+
+  //section other activities
+  #section-other-activities {
+    .items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  //section other activities end
+
+  //section footer
+  #section-footer {
+    .footer-down {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.5rem;
+      // footer down item
+      &-item {
+        padding: 1rem;
+      }
+      .footer-mobile {
+        display: flex;
+        justify-content: center;
+        border-top: 1px dashed $light-color;
+        border-bottom: 1px dashed $light-color;
+      }
+    }
+  }
+  //section footer end
+}
+//media max width 800 end
+
+//media max width 690
+@media (max-width: 690px) {
+  //section package summery
+  #section-package-summery {
+    //items
+    .packages-infos .box3 .items {
+      grid-template-columns: repeat(2, 1fr);
+      .item {
+        padding-bottom: 0.5rem;
+      }
+    }
+    //items end
+  }
+  //section package summery end
+
+  //section subs to our
+  #section-subs-to-our {
+    div {
+      flex-direction: column;
+      span {
+        padding: 1rem;
+      }
+      form {
+        padding: 1rem;
+      }
+    }
+  }
+  //section subs to our end
+}
+//media max width 690 end

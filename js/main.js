@@ -27,4 +27,10 @@ $(document).ready(function () {
     navText: [previcon, nexticon],
     margin: 100,
   });
+
+  $(".deneme").owlCarousel({
+    center: false,
+    loop: true,
+    items: 5,
+  });
 });

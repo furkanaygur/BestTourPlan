@@ -216,6 +216,14 @@ body {
         // ul end
       }
       // Hotel infos End
+
+      // hotel infos mobile
+      .hotel-infos-mobile {
+        height: 100px;
+        width: 100px;
+      }
+
+      // hotel infos mobile end
     }
     // SECTION HOTEL infos end
   }
@@ -435,8 +443,13 @@ body {
           text-transform: uppercase;
         }
       }
-      .search {
-        padding: 3.5rem;
+      form {
+        width: 350px;
+        padding: 3rem;
+
+        button {
+          width: 20%;
+        }
       }
     }
     //content div end
@@ -678,4 +691,4 @@ body {
 //section end
 
 // Media
-//@import "media";
+@import "media";
