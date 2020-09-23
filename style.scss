@@ -216,291 +216,96 @@ body {
         // ul end
       }
       // Hotel infos End
-      .hotel-infos-content {
-        margin-top: 2rem;
-        display: grid;
-        grid-template-areas:
-          "box1 box2"
-          "box3 box3";
-        grid-gap: 1rem;
-
-        .box1 {
-          background-color: #ffffff;
-          border-radius: 5px;
-          grid-area: box1;
-          height: 220px;
-          width: 510px;
-          //first Div
-          div {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1rem;
-            padding: 1rem;
-            //Second div
-            div {
-              padding: 0.5rem;
-              display: flex;
-              justify-content: left;
-              align-items: center;
-              width: 200px;
-              font-size: 12px;
-              .fa {
-                padding-right: 1rem;
-                font-size: 14px;
-              }
-            }
-            //second div end
-          }
-          //first div end
-        }
-        //box1 end
-        .box2 {
-          background-color: #ffffff;
-          border-radius: 5px;
-          grid-area: box2;
-          height: 220px;
-          width: 510px;
-          //first Div
-          div {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1rem;
-            padding: 1rem;
-
-            &:last-child {
-              justify-content: center;
-            }
-
-            //Second div
-            div {
-              padding: 0.5rem;
-              display: flex;
-              justify-content: left;
-              width: 220px;
-              font-size: 12px;
-              .fa {
-                padding-right: 1rem;
-                font-size: 14px;
-              }
-            }
-            //second div end
-          }
-          //first div end
-        }
-        //box3
-        .box3 {
-          border-radius: 5px;
-          margin-top: 1.5rem;
-          grid-area: box3;
-          background-color: #ffffff;
-          width: 100%;
-          //items
-          .items {
-            display: flex;
-            justify-content: start;
-            /*display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 3rem;
-            padding: 2rem 0 0 1.2rem;*/
-            //item
-            padding: 2em;
-            .item {
-              width: 330px;
-              //item title
-              &-title {
-                color: $second-color;
-                font-size: 13px;
-                padding-left: 1rem;
-                font-weight: bold;
-              }
-
-              ul {
-                padding-top: 0.6rem;
-                list-style: none;
-                li {
-                  font-size: 12px;
-                  padding: 0.8rem;
-                  i {
-                    font-size: 14px;
-                    padding-right: 1.2rem;
-                  }
-                }
-              }
-              // ul end
-            }
-            //item
-          }
-          //items end
-        }
-        //box3 end
-      }
-      // hotel content infos
-
-      //other-packages
-      .other-packages {
-        //other-packages-title
-        .other-packages-title {
-          display: flex;
-          padding: 3rem;
-          justify-content: center;
-          align-items: center;
-        }
-        //other-packages-title end
-
-        //other-packages-items
-        &-items {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-gap: 1rem;
-
-          //first child
-          & > *:first-child {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1rem;
-            grid-column: 1 / span 2;
-            .packages-img {
-              img {
-                border-radius: 5px 0 0 5px;
-                width: 346px !important;
-                height: 500px !important;
-              }
-              .flash-offer {
-                display: flex;
-                width: 80px;
-                height: 40px;
-                font-size: 12px;
-                align-items: center;
-                justify-content: center;
-              }
-            }
-
-            //package content
-            .package-content {
-              display: flex;
-              flex-direction: column;
-              padding: 1.5rem 1.5rem 0rem 1.5rem;
-              font-size: 14px;
-              //content-title
-              .content-title {
-                padding-bottom: 2rem;
-                i {
-                  font-size: 0.3rem;
-                  color: #f2994a;
-                  padding-bottom: 0.5rem;
-                }
-              }
-              //content-title end
-              .package-icons {
-                padding: 3rem 0 !important;
-                i {
-                  padding-right: 1rem !important;
-                  padding-top: 1rem !important;
-                }
-              }
-              .package-value div {
-                padding-right: 3.8rem;
-              }
-            }
-            //package-content end
-          }
-          //first-child end
-
-          //Package-item
-          .package-item {
-            border-radius: 5px;
-            background-color: $main-color;
-            color: $light-color;
-            .packages-img {
-              position: relative;
-              img {
-                border-radius: 5px 5px 0 0;
-                width: 340px;
-                height: 250px;
-              }
-              .flash-offer {
-                position: absolute;
-                left: 0;
-                top: 20px;
-                z-index: 1;
-                border-radius: 0 5px 5px 0;
-              }
-            }
-
-            .package-content {
-              padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-
-              //content-title
-              .content-title {
-                font-size: 18px;
-                //  padding-bottom: 1rem;
-                i {
-                  font-size: 0.3rem;
-                  color: #f2994a;
-                  padding-bottom: 0.5rem;
-                }
-              }
-              //content-title-end
-
-              //package-icons
-              .package-icons {
-                display: flex;
-                flex-direction: column;
-                padding-top: 0.5rem;
-                padding-bottom: 1.5rem;
-                font-size: 10px;
-                i {
-                  padding-right: 1rem;
-                  padding-top: 1rem;
-                }
-              }
-              //package icons end
-
-              //package-value
-              .package-value {
-                display: flex;
-                align-items: flex-end;
-
-                //div
-                div {
-                  display: flex;
-                  flex-direction: column;
-                  padding-right: 5rem;
-                  .discount {
-                    font-size: 14px;
-                  }
-                }
-                //div end
-
-                //button
-                button[type="submit"] {
-                  border-radius: 5px;
-                  float: right;
-                  height: 40px;
-                  width: 120px;
-                  background-color: $second-color;
-                  border: none;
-                  text-align: center;
-                  color: $light-color;
-                  cursor: pointer;
-                  &:hover {
-                    opacity: 90%;
-                  }
-                }
-                //button end
-              }
-              //package value end
-            }
-            //package-item end
-          }
-        }
-        //other-packages-item end
-      }
-      //other packages
     }
     // SECTION HOTEL infos end
   }
   //Section Hotel End
+
+  //section package-summery
+  &-package-summery {
+    //packages infos
+    .packages-infos {
+      margin: 1.5rem 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      div {
+        background: #ffffff;
+      }
+      .box1 {
+        display: grid;
+        grid-template-rows: 50px 1fr;
+        grid-gap: 1rem;
+        padding-bottom: 1rem;
+        .box1-content {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 1rem;
+          div {
+            padding: 0.5rem 1rem;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .box2 {
+        display: grid;
+        grid-template-rows: 50px 1fr;
+        .box2-content {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 1rem;
+          font-size: 12px;
+
+          padding: 1.2rem;
+          .box2-item {
+            display: flex;
+          }
+          i {
+            font-size: 14px;
+            padding: 0.2rem 1rem 0 0;
+          }
+        }
+      }
+
+      //box3
+      .box3 {
+        grid-column: 1 / span 2;
+        display: grid;
+        grid-template-rows: 50px 1fr;
+        // items
+        .items {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          padding: 2rem;
+          //item
+          .item {
+            .item-title {
+              color: $second-color;
+              padding: 0.5rem;
+            }
+            ul {
+              padding: 0.5rem;
+              list-style: none;
+              font-size: 12px;
+              li {
+                padding: 1rem 0;
+                i {
+                  padding-right: 0.5rem;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+          //item end
+        }
+        //items end
+      }
+      //box3 end
+    }
+    //packages infos end
+  }
+  //section package-summery end
 
   //Section about-us
   &-about-us {
@@ -651,8 +456,8 @@ body {
       .item {
         background: url(img/hotel.jpg) no-repeat center center/cover;
         border-radius: 5px;
-        height: 255px;
-        width: 255px;
+        height: 100%;
+        width: 100%;
         //content div
         div {
           padding: 9rem 1rem 1rem 1rem;
@@ -660,12 +465,12 @@ body {
           display: flex;
           flex-direction: column;
           span {
-            width: 200px;
+            width: 80%;
           }
           button {
             margin-top: 1rem;
             height: 30px;
-            width: 100px;
+            width: 40%;
             font-size: 12px;
           }
         }
