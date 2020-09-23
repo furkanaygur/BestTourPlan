@@ -12,6 +12,9 @@
 }
 
 //padddings
+.py-05 {
+  padding: 0.5rem;
+}
 .py-1 {
   padding: 1rem 0;
 }
@@ -142,7 +145,6 @@ button[type="submit"] {
 .value {
   font-weight: bold;
   font-size: 24px;
-  margin: 0.5rem 0;
 }
 
 //Package Name
@@ -179,13 +181,14 @@ button[type="submit"] {
 .search {
   form {
     input[type="text"] {
-      padding-left: 2rem;
+      padding-left: 1rem;
       margin-right: 0;
       height: 40px;
-      width: 350px;
+      width: 75% !important;
       border: none;
       background-color: $grey-color;
       border-radius: 5px 0 0 5px;
+      float: left;
     }
 
     button {
@@ -193,10 +196,9 @@ button[type="submit"] {
       color: $light-color;
       border: none;
       height: 40px;
-      width: 65px;
-      transform: translateX(-5px);
+      width: 15%;
+      float: left;
       border-radius: 0 5px 5px 0;
-      margin-left: 0;
     }
     //Button End
   }

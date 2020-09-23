@@ -25,6 +25,6 @@ $(document).ready(function () {
     items: 1,
     nav: true,
     navText: [previcon, nexticon],
-    dots: true,
+    margin: 100,
   });
 });

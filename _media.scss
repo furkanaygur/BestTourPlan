@@ -1,0 +1,99 @@
+//************** at the bottom of the style.scss file
+//for ipad pro
+@media (max-width: 1024px) {
+  //header
+  #header {
+    .logo {
+      font-size: 18px;
+    }
+    //search
+    .search {
+      form {
+        input[type="text"] {
+          width: 400px;
+        }
+      }
+    }
+    //search end
+  }
+  //header end
+
+  //sections
+  #section {
+    //section hotel
+    &-hotel {
+      //hotel info
+      .hotel-info {
+        //hotel image
+        .hotel-image {
+          padding-right: 1rem;
+          img {
+            width: 620px;
+          }
+        }
+        //hotel image end
+      }
+      //hotel info end
+    }
+    // section hotels end
+
+    //section hotel infos
+    &-hotel-infos {
+      // hotel infos content
+      .hotel-infos-content {
+        display: flex;
+        flex-direction: column;
+        //box1 and box2
+        .box1,
+        .box2 {
+          width: 100%;
+          div {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+        // box1 and box2 end
+      }
+      //hotel infos content end
+
+      //other packages
+      .other-packages {
+        //other packages items
+        &-items {
+          grid-template-columns: repeat(2, 1fr);
+
+          //first child
+          & > *:first-child {
+            .packages-img {
+              img {
+                width: 450px !important;
+                margin-left: 0 !important;
+              }
+            }
+            //packages img end
+
+            .package-content {
+              .package-value div {
+                padding-right: 45% !important;
+              }
+            }
+          }
+          //first child end
+
+          //packages img
+          .packages-img {
+            img {
+              width: 380px !important;
+              margin-left: 3rem;
+            }
+          }
+          //packages img end
+        }
+        //other packages items end
+      }
+      //other packages end
+    }
+    //section hotel infos end
+  }
+  //sections end
+}
+// medial max width 1024 end

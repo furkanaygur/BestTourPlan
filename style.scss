@@ -4,7 +4,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 html,
@@ -107,7 +106,6 @@ body {
     //Hotel name info
     .hotel-name-info {
       display: flex;
-
       justify-content: space-between;
     }
     //Hotel name info End
@@ -119,111 +117,69 @@ body {
       margin-bottom: 1.5rem;
     }
 
-    //hotel info
-    .hotel-info {
-      display: flex;
-      border-radius: 5px;
-      //Hotel image
-      .hotel-image {
-        border-radius: 5px;
-        padding-right: 2rem;
-        img {
-          width: 670px;
-          height: 450px;
-          border-radius: 5px;
-        }
-      }
-      //Hotel image end
-
-      .hotel-value {
-        width: 350px;
-        height: 210px;
-        background-color: $main-color;
-        color: $light-color;
-        margin-bottom: 1.5rem;
-        border-radius: 8px;
-        //div
-        div {
-          display: flex;
-          //left
-          .left {
-            display: flex;
-            flex-direction: column;
-            width: 220px;
-            height: 130px;
-            padding: 1.5rem;
-            .lead {
-              font-size: 10px;
-            }
-            .quick-booking {
-              font-size: 18px;
-              margin-top: 0.7rem;
-            }
-          }
-          //left End
-
-          //right
-          .right {
-            display: grid;
-            grid-template-rows: repeat(3, 1fr);
-            height: 130px;
-            font-size: 12px;
-            //div
-            div {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              font-size: 15px;
-              padding: 0.3rem 1rem;
-              span {
-                font-size: 22px;
-              }
-              &:first-child {
-                margin-top: 1rem;
-              }
-              &:last-child {
-                margin-top: 0.9rem;
-                i {
-                  transform: translateX(8px);
-                }
-              }
-            }
-            //div end
-
-            i {
-              margin-right: 0.5rem;
-            }
-            p {
-              padding: 0.5rem;
-            }
-          }
-          //right end
-        }
-        //div end
-        button {
-          padding: 1rem;
-          background-color: $second-color;
-          color: $light-color;
-          margin: 1rem;
-          border: none;
-          border-radius: 5px;
-          width: 90%;
-          cursor: pointer;
-          &:hover {
-            opacity: 90%;
-          }
-        }
-      }
-      .hotel-map-location {
-        width: 350px;
-        height: 210px;
-
-        img {
+    //section hotel photos
+    &-photos {
+      //hotel info
+      .hotel-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        // Hotel image
+        .hotel-image {
+          grid-column: 1 / span 2;
+          grid-row: 1 / span 2;
+          background: url(img/hotel.jpg) no-repeat center center/cover;
+          height: 100%;
+          width: 100%;
           border-radius: 10px;
         }
+        // Hotel image end
+
+        // Hotel value
+        .hotel-value {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          padding: 1.5rem;
+          grid-gap: 1rem;
+          background-color: $main-color;
+          color: $light-color;
+          border-radius: 5px;
+
+          .lead {
+            font-size: 10px;
+          }
+
+          button {
+            grid-column: 1 / span 2;
+            width: 100%;
+          }
+          // right
+          .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            i {
+              font-size: 14px;
+              padding-right: 1rem;
+            }
+            .phone {
+              font-size: 18px;
+              padding-top: 1.2rem;
+            }
+          }
+          // right end
+        }
+        // Hotel value  end
+        .hotel-map-location {
+          height: 347px;
+          width: 100%;
+          border-radius: 5px;
+        }
       }
+      //hotel info end
     }
-    //hotel info end
+    //section hotel photos end
 
     // SECTION HOTEL infos
     &-infos {
@@ -392,7 +348,7 @@ body {
         //other-packages-title end
 
         //other-packages-items
-        .other-packages-items {
+        &-items {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-gap: 1rem;
@@ -558,9 +514,22 @@ body {
     //about us class
     .about-us {
       max-width: 730px;
-      height: 280px;
       margin: auto;
       position: relative;
+      background-color: $grey-color;
+
+      .owl-stage-outer {
+        height: 400px;
+        padding-top: 4rem;
+        img {
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          position: absolute;
+          top: -50px;
+          left: 44%;
+        }
+      }
 
       .owl-nav {
         position: absolute;
@@ -575,18 +544,9 @@ body {
         }
       }
 
-      img {
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        position: absolute;
-        top: -50px;
-        left: 44%;
-        z-index: 3;
-      }
-
       //content
       .content {
+        height: 300px;
         border-radius: 10px;
         background-color: #ffffff;
         display: flex;
@@ -873,6 +833,7 @@ body {
       padding-top: 4rem;
       display: grid;
       grid-template-columns: 1fr 7fr 1fr;
+      font-size: 10px;
       //ul
       ul {
         list-style: none;
@@ -910,3 +871,6 @@ body {
   //section footer end
 }
 //section end
+
+// Media
+//@import "media";
