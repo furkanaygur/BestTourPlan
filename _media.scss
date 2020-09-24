@@ -314,6 +314,7 @@
         grid-column: 1 / span 2;
         display: flex;
         align-items: center;
+        font-size: 24px !important;
       }
       .menu-wrap {
         display: block;
@@ -402,6 +403,27 @@
 
 //media 500px
 @media (max-width: 500px) {
+  #section-hotel {
+    .page-location-text {
+      width: 100%;
+      margin: 1rem 0;
+    }
+    .hotel-name-info {
+      display: flex;
+      flex-direction: column;
+      div {
+        display: flex;
+        flex-direction: column;
+        .flash-offer {
+          text-align: center;
+        }
+      }
+      .user-rattings {
+        width: 100px;
+        margin-left: auto;
+      }
+    }
+  }
 }
 //media 500px end
 //smartphones end
