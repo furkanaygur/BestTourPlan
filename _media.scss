@@ -3,17 +3,22 @@
 // For logo
 @media (max-width: 1068px) {
   .logo {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 900px) {
   .logo {
-    font-size: 28px !important;
+    font-size: 32px !important;
   }
   #header {
-    .header-medium .search {
-      margin-top: 2.5rem;
+    .header-medium {
+      .account .fas {
+        padding: 0.5rem 3rem;
+      }
+      .search {
+        margin-top: 2.5rem;
+      }
     }
   }
 }
@@ -208,6 +213,15 @@
 
 //media max width 800
 @media (max-width: 800px) {
+  #header {
+    .header-medium-container {
+      padding: 0.5;
+      .header-medium .account .fas {
+        padding: 0.5rem 2rem;
+      }
+    }
+  }
+
   // section hotel photos
   #section-hotel-photos .hotel-info {
     grid-template-columns: repeat(2, 1fr);
@@ -281,8 +295,26 @@
 }
 //media max width 690 end
 
-//Smartphones 
-@media(max-width:500px){
+//Smartphones
+@media (max-width: 670px) {
+  //id header
+  #header {
+    .header-up,
+    .navbar-container {
+      display: none;
+    }
+    .header-medium-container,
+    .search,
+    .account {
+      display: none;
+    }
 
+    .header-mobile {
+      display: block !important;
+      height: 50px;
+      width: 100px;
+    }
+  }
+  //id header end
 }
 //smartphones end
