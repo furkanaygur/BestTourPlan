@@ -1272,6 +1272,9 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #section-footer .footer-top-item {
+    padding: 1rem 0;
+  }
   #section-footer .footer-top .child2,
   #section-footer .footer-top .child3 {
     width: 95% !important;
@@ -1354,6 +1357,12 @@ body {
   #section-footer .page-bottom .cards {
     width: 90px;
     margin: auto;
+  }
+}
+
+@media (max-width: 350px) {
+  #section-footer .footer-top {
+    font-size: 10px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

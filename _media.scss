@@ -394,6 +394,10 @@
       display: flex;
       flex-direction: column;
 
+      &-item {
+        padding: 1rem 0;
+      }
+
       .child2,
       .child3 {
         width: 95% !important;
@@ -498,3 +502,11 @@
 }
 //media 500px end
 //smartphones end
+
+//media 320px for iphone 5s
+@media (max-width: 350px) {
+  #section-footer .footer-top {
+    font-size: 10px !important;
+  }
+}
+//media 320px for iphone 5s end
