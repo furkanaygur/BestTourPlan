@@ -296,13 +296,34 @@
 //media max width 690 end
 
 //Smartphones
-//670px
-@media (max-width: 670px) {
-  //id header
+//680px
+@media (max-width: 680px) {
+  //header
   #header {
+    .navbar-container,
+    .header-up {
+      display: none;
+    }
+    //header medium
+    .header-medium {
+      .search,
+      .account {
+        display: none;
+      }
+      .logo {
+        grid-column: 1 / span 2;
+        display: flex;
+        align-items: center;
+      }
+      .menu-wrap {
+        display: block;
+      }
+    }
+    //header medium end
   }
-  //id header end
+  // header end
 }
+//680px end
 
 //615 px
 @media (max-width: 615px) {

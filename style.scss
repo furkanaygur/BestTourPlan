@@ -43,6 +43,9 @@ body {
       grid-template-columns: 1fr 2fr 1fr;
       grid-gap: 1rem;
 
+      .menu-wrap {
+        display: none;
+      }
       //Account Class
       .account {
         display: flex;

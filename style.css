@@ -235,6 +235,10 @@ body {
   grid-gap: 1rem;
 }
 
+#header .header-medium .menu-wrap {
+  display: none;
+}
+
 #header .header-medium .account {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1173,6 +1177,31 @@ body {
   }
   #section-subs-to-our div form {
     padding: 1rem;
+  }
+}
+
+@media (max-width: 680px) {
+  #header .navbar-container,
+  #header .header-up {
+    display: none;
+  }
+  #header .header-medium .search,
+  #header .header-medium .account {
+    display: none;
+  }
+  #header .header-medium .logo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header .header-medium .menu-wrap {
+    display: block;
   }
 }
 
