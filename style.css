@@ -1150,11 +1150,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     border-top: 1px dashed #fff;
     border-bottom: 1px dashed #fff;
+    padding: 0.2rem;
+  }
+  #section-footer .footer-down .footer-mobile ul li {
+    width: 320px;
   }
 }
 
@@ -1306,6 +1307,53 @@ body {
   #section-hotel .hotel-name-info .user-rattings {
     width: 100px;
     margin-left: auto;
+  }
+  #section-about-us {
+    padding-top: 2rem;
+  }
+  #section-about-us .about-us-title {
+    padding-bottom: 2rem;
+  }
+  #section-about-us .about-us-title .big-title {
+    font-size: 18px;
+  }
+  #section-subs-to-our .search form {
+    width: 250px;
+  }
+  #section-subs-to-our .search form button {
+    width: 15%;
+  }
+  #section-other-activities .items {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #section-footer .footer-down .footer-down-item form .text-fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #section-footer .footer-down .footer-down-item form .text-fields .text-input {
+    margin-bottom: 0.5rem;
+  }
+  #section-footer .page-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #section-footer .page-bottom ul {
+    margin: 1rem 0;
+  }
+  #section-footer .page-bottom .cards {
+    width: 90px;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

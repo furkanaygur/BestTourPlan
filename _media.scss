@@ -254,9 +254,13 @@
       }
       .footer-mobile {
         display: flex;
-        justify-content: center;
+
         border-top: 1px dashed $light-color;
         border-bottom: 1px dashed $light-color;
+        padding: 0.2rem;
+        ul li {
+          width: 320px;
+        }
       }
     }
   }
@@ -403,11 +407,16 @@
 
 //media 500px
 @media (max-width: 500px) {
+  //section hotel
   #section-hotel {
+    //page location text
     .page-location-text {
       width: 100%;
       margin: 1rem 0;
     }
+    //page location text end
+
+    //hotel name info
     .hotel-name-info {
       display: flex;
       flex-direction: column;
@@ -423,7 +432,69 @@
         margin-left: auto;
       }
     }
+    //hotel name info end
   }
+  //section hotel end
+
+  //section about us
+  #section-about-us {
+    padding-top: 2rem;
+    .about-us-title {
+      .big-title {
+        font-size: 18px;
+      }
+      padding-bottom: 2rem;
+    }
+  }
+  //section about us end
+
+  //section subs to our
+  #section-subs-to-our {
+    .search form {
+      width: 250px;
+      button {
+        width: 15%;
+      }
+    }
+  }
+  //section subs to our end
+
+  //section other activites
+  #section-other-activities {
+    .items {
+      grid-template-columns: 1fr;
+    }
+  }
+  //section other activites end
+
+  //section footer
+  #section-footer {
+    //footer down
+    .footer-down .footer-down-item {
+      //text fields
+      form .text-fields {
+        display: flex;
+        flex-direction: column;
+        .text-input {
+          margin-bottom: 0.5rem;
+        }
+      }
+      //text fields end
+    }
+    //footer down end
+    .page-bottom {
+      display: flex;
+      flex-direction: column;
+      ul {
+        margin: 1rem 0;
+      }
+      .cards {
+        width: 90px;
+        margin: auto;
+      }
+    }
+  }
+  //section footer end
 }
 //media 500px end
 //smartphones end
