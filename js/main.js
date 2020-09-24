@@ -28,7 +28,7 @@ $(document).ready(function () {
     margin: 100,
   });
 
-  $(".deneme").owlCarousel({
+  $(".owl-content").owlCarousel({
     center: false,
     loop: true,
     items: 5,
