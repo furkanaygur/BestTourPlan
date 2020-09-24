@@ -190,10 +190,6 @@ button[type="submit"]:hover {
   border-radius: 0 5px 5px 0;
 }
 
-.display-none {
-  display: none;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -558,7 +554,7 @@ body {
 }
 
 #section-about-us .about-us .owl-stage-outer {
-  height: 400px;
+  height: 500px;
   padding-top: 4rem;
 }
 
@@ -926,8 +922,8 @@ body {
   padding-top: 4rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 92% 8%;
-      grid-template-columns: 1fr 92% 8%;
+  -ms-grid-columns: 10% 78% 8%;
+      grid-template-columns: 10% 78% 8%;
   font-size: 10px;
 }
 
@@ -1180,20 +1176,74 @@ body {
   }
 }
 
-@media (max-width: 670px) {
-  #header .header-up,
-  #header .navbar-container {
-    display: none;
+@media (max-width: 615px) {
+  #section-hotel-photos .hotel-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  #header .header-medium-container,
-  #header .search,
-  #header .account {
-    display: none;
+  #section-hotel-photos .hotel-info .hotel-image {
+    margin-bottom: 0.5rem;
   }
-  #header .header-mobile {
-    display: block !important;
-    height: 50px;
-    width: 100px;
+  #section-hotel-photos .hotel-info .hotel-value {
+    margin-bottom: 0.5rem;
+  }
+  #section-about-us {
+    height: 100%;
+  }
+  #section-about-us .about-us {
+    height: 100%;
+  }
+  #section-about-us .about-us .owl-stage-outer {
+    height: 300px;
+  }
+  #section-about-us .about-us .owl-stage-outer img {
+    left: 40%;
+  }
+  #section-about-us .about-us .content {
+    height: 300px;
+  }
+  #section-about-us .about-us .content .text {
+    width: calc(100vh - 50vh);
+  }
+  #section-package-summery .packages-infos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #section-package-summery .packages-infos .box1,
+  #section-package-summery .packages-infos .box2 {
+    margin-bottom: 1rem;
+  }
+  #section-package-summery .packages-infos .box3 .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #section-footer .footer-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #section-footer .footer-top .child2,
+  #section-footer .footer-top .child3 {
+    width: 95% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

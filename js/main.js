@@ -26,6 +26,18 @@ $(document).ready(function () {
     nav: true,
     navText: [previcon, nexticon],
     margin: 100,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        margin: 300,
+      },
+      1000: {
+        items: 1,
+        nav: true,
+      },
+    },
   });
 
   $(".owl-content").owlCarousel({

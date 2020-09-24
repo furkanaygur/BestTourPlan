@@ -296,25 +296,91 @@
 //media max width 690 end
 
 //Smartphones
+//670px
 @media (max-width: 670px) {
   //id header
   #header {
-    .header-up,
-    .navbar-container {
-      display: none;
-    }
-    .header-medium-container,
-    .search,
-    .account {
-      display: none;
-    }
-
-    .header-mobile {
-      display: block !important;
-      height: 50px;
-      width: 100px;
-    }
   }
   //id header end
 }
+
+//615 px
+@media (max-width: 615px) {
+  //section hotel photos
+  #section-hotel-photos {
+    //hotel info
+    .hotel-info {
+      display: flex;
+      flex-direction: column;
+      .hotel-image {
+        margin-bottom: 0.5rem;
+      }
+      .hotel-value {
+        margin-bottom: 0.5rem;
+      }
+    }
+    //hotel info end
+  }
+  //section hotel photos end
+
+  //section about us
+  #section-about-us {
+    height: 100%;
+    .about-us {
+      height: 100%;
+      .owl-stage-outer {
+        height: 300px;
+        img {
+          left: 40%;
+        }
+      }
+      .content {
+        height: 300px;
+        .text {
+          width: calc(100vh - 50vh);
+        }
+      }
+    }
+  }
+  //section about us end
+
+  //section package summery
+  #section-package-summery {
+    .packages-infos {
+      display: flex;
+      flex-direction: column;
+      .box1,
+      .box2 {
+        margin-bottom: 1rem;
+      }
+      .box3 .items {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  //section package summery end
+
+  //section footer
+  #section-footer {
+    //footer top
+    .footer-top {
+      display: flex;
+      flex-direction: column;
+
+      .child2,
+      .child3 {
+        width: 95% !important;
+      }
+    }
+    //footer top end
+  }
+  //section footer end
+}
+//media 615px end
+
+//media 500px
+@media (max-width: 500px) {
+}
+//media 500px end
 //smartphones end
